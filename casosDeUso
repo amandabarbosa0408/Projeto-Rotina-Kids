@@ -1,0 +1,266 @@
+Documento de Especificação Casos de Uso
+Rotina Kids
+Grupo: Mário Gomes, Amanda Barbosa, Paula Arantes Naves 
+
+
+
+Documento de Especificação de Casos de
+		Uso		
+
+
+Grupo:
+Mário Gomes
+Amanda Barbosa
+Paula Arantes Naves
+			 
+1. Índice
+ 
+2. Objetivo
+
+Gerenciar as rotinas domésticas que são delegadas aos filhos. O sistema permitirá que atividades domésticas sejam cadastradas categorizadas por faixa etária e posteriormente delegadas diariamente aos filhos. 
+As atividades delegadas ficarão abertas para avaliação do responsável, que marcará cada atividade como concluída (ou não).
+
+ 
+3. Identificação dos atores 
+
+3.1.Ator-01 Mãe / Pai: Precisa estar logado no sistema através da informação de usuário e senha
+3.2. Ator 02 Filho: Precisa estar cadastrado no sistema
+ 
+
+4. Identificação dos Casos de Uso 
+
+4.1.UC-01 Cadastra usuário no sistema:  Efetuar o cadastro de usuários administradores do sistema
+
+4.2.UC-02 Faz login no sistema:  Acessar o sistema para efetuar operações críticas do sistema. Apenas usuários cadastrados podem efetuar login.
+
+4.3.UC-03 Cadastrar atividade: Inserir novas atividades no sistema. Apenas usuários logados podem inserir novas atividades. 
+
+4.4. UC-04 Marcar atividade como concluída: O pai ou a mãe poderão marcar uma atividade como concluída. Apenas usuários logados podem marcar uma atividade como concluída.
+	
+4.5. UC-05 Receber uma atividade atribuída: O filho terá uma atividade atribuída a ele durante o dia, cuja conclusão será avaliada posteriormente pelo pai/mãe.
+
+
+
+
+ 
+5. Diagrama de casos de uso
+
+
+
+
+
+
+
+
+
+  
+6. Detalhamento dos casos de uso
+
+6.1. UC-01 Cadastra usuário no sistema
+
+Descrição: Este caso de uso especifica a ação de autenticação que um usuário executa no sistema, com objetivo de se conectar na aplicação. Apenas usuários cadastrados podem se autenticar no sistema. O usuário fornece seus dados básicos de autenticação e, após a validação no sistema, o usuário torna-se apto a realizar operações da área restrita do sistema. Os usuários se dividem em: a) pai ou mãe (usuário habilitado a atualizar e configurar o sistema). 
+
+(a) Atores: Pai, mãe
+
+(b) Pré-condições:
+1. O ator deve estar cadastrado no sistema.
+(c) Pós-condições:
+1. O ator fica habilitado a realizar ações na área restrita do sistema.
+(d) Requisitos funcionais:
+1. RF28. O portal deve prover uma interface para clientes, operadores
+e administradores se autenticarem no sistema
+(e) Requisitos não funcionais:
+1. RNF01- O portal deve registrar em um log as operações
+realizadas no sistema para permitir auditoria
+2. RNF06. Impedir acesso ao sistema a usuários bloqueados
+3. RNF12. As senhas de usuários devem ser armazenadas
+de forma criptografada..
+
+
+Fluxo Básico:
+
+1. O ator decide se autenticar no sistema.
+2. O sistema solicita as informações obrigatórias para a
+autenticação:
+1. E-mail
+2. Senha
+3. O ator informa os dados de autenticação.
+4. O sistema valida os dados de autenticação.
+5. O sistema registra em histórico (log) a autenticação
+realizada pelo ator. Os seguintes dados são armazenados:
+1. Usuário
+2. Grupo de Usuário
+3. Data
+6. O sistema habilita as ações relacionadas ao grupo de
+usuário ao qual pertence o ator.
+7. O sistema informa que a autenticação foi realizada
+com sucesso.
+O caso de uso se encerra.
+
+Fluxo Alternativo A:
+
+1. No passo 4 do Fluxo Básico, caso haja algum erro na autenticação
+relacionado aos dados informados:
+2. O sistema informa o erro ao ator.
+3. O fluxo retorna ao passo 2 do fluxo básico.
+
+Fluxo Alternativo B:
+
+1. No passo 4 do Fluxo Básico, caso o sistema identifique que ator está
+bloqueado:
+2. O sistema informa o erro ao ator.
+3. O fluxo retorna ao passo 2 do fluxo básico.
+
+Fluxo Alternativo C:
+
+1. No passo 1 do Fluxo Alternativo A, caso aconteça o erro de autenticação
+após um número configurável de tentativas:
+2. O sistema bloqueia o ator.
+3. O sistema registra em histórico (log) o bloqueio do ator.
+4. O sistema informa o erro ao ator.
+5. O fluxo retorna ao passo 2 do fluxo básico.
+
+6.2 UC-02 Faz login no sistema 
+Descrição: O usuário cadastrado informa seu nome de usuário e senha a fim de ser autenticado pelo sistema e poder realizar atividades de administração dos componentes disponíveis.
+
+(a) Atores: Pai / Mãe
+
+(b) Pré-condições: O ator deve estar devidamente cadastrado.
+
+(c) Pós-condições: O ator passa a ter acesso às áreas restritas do sistema
+
+(d) Requisitos funcionais: 
+
+(e) Requisitos não funcionais:
+
+2. RNF06. Impedir acesso ao sistema a usuários bloqueados
+3. RNF12. As senhas de usuários devem ser armazenadas
+de forma criptografada..
+
+
+Fluxo Básico:
+1.	O ator informa seu nome de usuário
+2.	O ator informa sua senha
+3.	O ator submete seus dados para análise 
+4.	O sistema analisa os dados informados
+5.	Caso os dados informados ao sistema sejam validados, o ator passa a ter acesso à área restrita do sistema.
+
+Fluxo Alternativo A:
+
+1.	No passo (4) do Fluxo Básico, caso haja algum erro na autenticação
+relacionado aos dados informados:
+2. 	 O sistema informa o erro ao ator.
+3. 	 O fluxo retorna ao passo 1 do fluxo básico.
+
+6.3 UC-03 Cadastrar atividade 
+Descrição: O ator pode inserir uma nova atividade no sistema atribuindo-lhe um nome, uma descrição e uma faixa etária.
+
+(a) Atores: Pai / mãe, filho
+
+(b) Pré-condições:
+
+1. 	O ator pai / mãe precisa estar logado no sistema
+2.	O ator filho precisa estar cadastrado no sistema
+
+(c) Pós-condições:
+
+1. 	O sistema passa a atividade cadastrada em seus registros
+2. 	O ator filho pode ser vinculado à atividade cadastrada
+
+(d) Requisitos funcionais:
+
+(e) Requisitos não funcionais:
+
+2. RNF06. Impedir acesso ao sistema a usuários bloqueados
+3. RNF12. As senhas de usuários devem ser armazenadas
+de forma criptografada..
+
+
+Fluxo Básico:
+1.	O ator acessa a tela de cadastro de atividades
+2.	O ator preenche o campo “Nome da Atividade”
+3.	O ator preenche o campo “Descrição”
+4.	O ator preenche o campo “Grupo Etário”
+5.	O ator preenche o campo “Quantidade de moedas”
+6.	O ator seleciona o botão de envio das informações
+7.	O sistema retorna a mensagem “Atividade inserida com sucesso”
+
+
+Fluxo Alternativo A:
+
+1.	No passo (7) do Fluxo Básico, caso haja algum erro na autenticação
+relacionado aos dados informados:
+2. 	 O sistema informa o erro ao ator.
+3. 	 O fluxo retorna ao passo 2 do fluxo básico.
+
+6.4 UC-04 Marcar atividade como concluída 
+Descrição: O ator [pai/mãe] pode selecionar as atividades previamente atribuídas ao ator [filho] e foram realizadas, para marca-las como concluídas.
+
+(a) Atores: Pai / mãe, filho
+
+(b) Pré-condições: As atividades precisam ter sido devidamente atribuídas ao filho em determinado dia.
+
+(c) Pós-condições: As atividades concluídas ficarão marcadas com o símbolo 
+
+(d) Requisitos funcionais:
+
+(e) Requisitos não funcionais:
+
+2. RNF06. Impedir acesso ao sistema a usuários bloqueados
+3. RNF12. As senhas de usuários devem ser armazenadas
+de forma criptografada..
+
+
+Fluxo Básico:
+
+1.	O ator [pai / mãe] acessa a tela de atividades atribuídas
+2.	O ator marca a caixa de seleção referente à(s) atividade(s) que foram concluídas
+3.	O ator seleciona o botão de envio para autenticação e armazenamento
+4.	O sistema autentica as atividades concluídas
+5.	O sistema armazena as informações enviadas
+6.	O sistema retorna mensagem informando o ator [pai /mãe] “autenticação realizada com sucesso”
+
+Fluxo Alternativo A:
+
+
+1.	No passo (6) do Fluxo Básico, caso haja algum erro na autenticação
+relacionado aos dados informados:
+2. 	 O sistema informa o erro ao ator.
+3. 	 O fluxo retorna ao passo 2 do fluxo básico.
+
+
+6.5 UC-05 Receber uma atividade atribuída 
+Descrição: O ator recebe atividades em seu nome para que sejam executadas.
+
+(a) Atores: Filho
+
+(b) Pré-condições: Ator deve estar cadastrado no sistema
+
+(c) Pós-condições: O ator terá uma série de atividades, marcadas como concluídas, arquivadas em seu nome.
+
+
+(d) Requisitos funcionais:
+
+(e) Requisitos não funcionais:
+
+2. RNF06. Impedir acesso ao sistema a usuários bloqueados
+3. RNF12. As senhas de usuários devem ser armazenadas
+de forma criptografada..
+
+
+Fluxo Básico:
+
+1.	O ator [pai / mãe] acessa a tela de atividades 
+2.	O ator marca a caixa de seleção referente à(s) atividade(s) que deseja atribuir ao ator [filho]
+3.	O ator seleciona o botão de envio para autenticação e armazenamento
+4.	O sistema autentica as atividades atribuídas
+5.	O sistema retorna mensagem informando o ator [pai /mãe] “atribuição realizada com sucesso”
+6.	O sistema armazena as informações enviadas na pagina de atividades atribuídas.
+
+
+Fluxo Alternativo A:
+
+1.	No passo (5) do Fluxo Básico, caso haja algum erro na autenticação
+relacionado aos dados informados:
+2. 	 O sistema informa o erro ao ator.
+3. 	 O fluxo retorna ao passo 2 do fluxo básico.
