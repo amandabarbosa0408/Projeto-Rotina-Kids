@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/model/BancoDeMoedas.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/view/ManterLogin.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/model/ConexaoMySQL.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Controller/FilhoController.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/IConexaoMySQLDao.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/IResponsavel.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/view/ManterAtividade.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/model/Responsavel.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/FilhoDao.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/model/Login.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/IAtividade.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/BancoDeMoedasDao.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/ConexaoMySQLDao.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/IUsuario.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/IFilho.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/model/AtividadeAtribuida.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/LoginDao.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/AtividadeAtribuidaDao.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/view/ManterFilho.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/projetorotinakids/Main_ProjetoRotinaKids.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/AtividadeDao.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/model/Usuario.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/view/ManterResponsavel.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/IAtividadeAtribuida.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Controller/ResponsavelController.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/model/Filho.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/view/ManterAtividadeAtribuida.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/ILogin.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Controller/LoginController.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/UsuarioDao.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/model/Atividade.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Dao/ResponsavelDao.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Controller/AtividadeController.java</file>
+            <file>file:/C:/Users/Amanda/Documents/NetBeansProjects/novo_projeto/Projeto/src/Controller/AtividadeAtribuidaController.java</file>
+        </group>
+    </open-files>
+</project-private>

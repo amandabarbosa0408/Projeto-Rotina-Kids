@@ -1,0 +1,7 @@
+Importar o banco (_rotinakids)
+
+Responsavel cadastrado no banco (que já possui filhos cadastrados!):
+
+login: amanda
+senha: amanda
+
